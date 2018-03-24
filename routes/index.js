@@ -5,7 +5,7 @@ var path = require("path")
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    title: 'Als',
+    title: 'Al',
     profile_pic: '/images/content/profile.jpg'
   }); // dynamically adding content to our index file  
 });
