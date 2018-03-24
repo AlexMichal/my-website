@@ -2,15 +2,66 @@
 <html> 
     <head> 
         <meta charset="UTF-8"> 
-        <title>{{ title }}</title> <link rel="stylesheet" href="css/style.css"> 
+        <title>{{ title }}</title> 
+        <link rel="stylesheet" href="stylesheets/style.css"> 
         <!-- bootstrap --> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-        <!-- jQuery library --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-        </script> <!-- js --> <script src="js/script.js"></script> 
+        <!-- jQuery library --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- js --> 
+        <script src="javascript/script.js"></script> 
         <!-- font awesome --> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-</head> 
-<body> 
-    {{{ body }}} {{!--{{{ }}} means we render the HTML as is --}} 
-</body> </html>
+    </head> 
+    <body>
+        <!-- NAVIGATION BAR -->
+        <section id="navigation_bar">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                <div class="navbar-header">
+                    <!-- COMPRESSED NAV BAR -->
+                    <a class="navbar-brand" href="#">Alex Michal</a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </section> 
+
+        {{{ body }}} {{!--{{{ }}} means we render the HTML as is --}} 
+
+        <!-- FOOTER -->
+        <section id="footer">
+            <div class="row">
+                <div class="col-xs-4"  style="text-align: right">
+                <a href="#">
+                    <span class="fa fa-envelope-square"></span>
+                </a>
+                </div>
+                <div class="col-xs-4" style="text-align: center">
+                <a href="http://www.linkedin.com/">
+                    <span class="fa fa-linkedin-square"></span>
+                </a>
+                </div>
+                <div class="col-xs-4" style="text-align: left">
+                <a href="http://www.twitter.com" target='_blank'>
+                    <span class="fa fa-twitter-square"></span>
+                </a>
+                </div>
+            </div>
+        </section>
+    </body> 
+</html>

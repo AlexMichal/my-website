@@ -4,7 +4,10 @@ var path = require("path")
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' }); // dynamically adding content to our index file  
+  res.render('index', { 
+    title: 'Als',
+    profile_pic: '/images/content/profile.jpg'
+  }); // dynamically adding content to our index file  
 });
 
 module.exports = router;
