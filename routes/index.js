@@ -4,11 +4,7 @@ var path = require("path")
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' }); // dynamically adding to our index file  
-  //res.sendFile(path.join(__dirname, '../views', 'index.html'));
-  // res.sendFile('../views/index.html' , { root : __dirname});
+  res.render('index', { title: 'Express' }); // dynamically adding content to our index file  
 });
-
-
 
 module.exports = router;
