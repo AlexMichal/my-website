@@ -2,6 +2,11 @@
   background-color: rgb(35, 52, 63);
   padding: 25px;
 }
+#footer {
+  font-size: 60px !important;
+  background-color: rgb(35, 52, 63);
+  padding: 4px;
+}
 
 .navbar {
   border-radius: 0;
@@ -23,13 +28,7 @@
 }
 
 body {
-  background-color:  rgb(245, 248, 250);
-}
-
-#footer {
-  font-size: 60px !important;
-  background-color: rgb(35, 52, 63);
-  padding: 4px;
+  background-color:  #15f8fa;
 }
 
 hr.divider {
